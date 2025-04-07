@@ -1,0 +1,25 @@
+1. 테이블과 시퀀스를 로컬과 원격에 생성
+   memo : 번호, 제목, 내용, 작성자, 작성일
+   가급적 테이블에 기본값을 지정하자
+
+2. 로깅 라이브러리 설정
+   - 자바의 로깅 표준 : slf4j
+   - 스프링의 로깅 구현체 : logback <->log4j2
+   - 표준이 있고, 그 구현체들을 사용하면 호환이 된다 -> facade 패턴
+    (Singleton, Builder, Command, Facade)
+   - logback의 로깅 설정을 변경 -> logback.xml
+
+3. 실행되는 sql을 로깅하기 위해 log4jdbc를 추가
+   - 로깅 구현체와 연결을 위해 log4jdbc.log4j2.properties가 필요하다
+
+4. git 저장소 생성
+   - commit 후 master b로 main b으로 변경
+   - feature/memo, feature/mock_memo
+
+5. DataSource 설정 추가
+  - 연결을 매번 생성하고 파괴하는 것은 비효율적
+  - 연결을 미리 만들어놓고 빌려서 사용 후 반납하는 자바 표준
+
+6. 엔티티 작성
+
+7. Dao 작성 및 테스트

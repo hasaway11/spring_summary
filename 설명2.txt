@@ -1,0 +1,17 @@
+1. 스프링 앱을 실행하는 서버
+- Web Server : 정적인 자원(html, css, 이미지, 동영상)을 서비스
+               Apache, nginX 등
+- Web Application Server : 자바 코드를 html을 생성한다
+               apache tomcat 등
+
+2. 아파치 톰캣 WAS
+- 스프링의 기본 WAS로 제한적인 웹서버 기능도 제공한다
+
+3. legacy 자바 웹 프로그램 배포
+- 서버가 있어야만 실행가능한 자바 웹 프로그램은 확장자 war로 압축
+- war 파일을 서버에 배포
+
+4. 스프링 부트
+- 내장 톰캣을 사용해 jar로 배포(gradle로 내장 서버 교체 가능)
+- 외부 서버없이 단독 실행이 가능 -> 배포 환경에 구애받지 않는다
+- make jar, not war
